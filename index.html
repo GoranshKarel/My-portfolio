@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!--//to connect the Css file -->
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1dcc8cf4a.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Certification</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>A HUSTLER</p>
+                <h1>Hi, I am <span>Goransh</span> <br>Final Year Student <br>from VIT Vellore</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------- About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutME.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Gornash Karel, a Computer Science student with a specialization in Internet of Things (IoT) 
+                        at Vellore Institute of Technology, where I currently hold a CGPA of 9.26. My passion for technology 
+                        drives me to continuously explore and implement innovative solutions. I am known for my analytical 
+                        thinking, adaptability, and meticulous attention to detail, which help me tackle complex problems effectively. My strong work ethic and ability to communicate technical concepts clearly make me a valuable team member. I am dedicated to leveraging my skills to make a meaningful impact in the tech field and excited about the opportunities that lie ahead.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, Python, C/C++ , JavaScript, HTML , CSS, R</li>
+                            <li><span>Databases</span><br>MongoDB, MySqL</li>
+                            <li><span>IOT</span><br> Audino IDE(C++ language)</li>
+                            <li><span>Cloud Technologies</span><br> Microsoft Azure , Amazom Web Services</li>
+
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nuclear Power Corporation Of India Ltd, Rawatbhata</span><br> <b> Vocational Trainee(11 June 2024 – 09 July 2024)</b> <br> 
+                                •Configured and maintained routers, switches, and firewalls to ensure optimal
+                                network performance and security. <br>
+                                • Utilized tools such as Wireshark for real-time monitoring and analysis of network traffic. <br>
+                                • Configured network settings, user accounts, and software installations, ensuring optimal
+                                server performance and security.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; April 2006 – March 2019  </span><br>St pauls School Rawatbhata <br>Percentage:- 92.8</li>
+                            <li><span>Higher Secondary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; April 2019 – March 2021</span><br>Kautilya Sr Sec Pubic School <br>Percentage:- 87.8</li>
+                            <li><span>Under Graduation &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; April 2021 – June 2025</span><br>Vellore Institue Of Technology , Vellore <br>Cgpa:- 9.26</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Certification----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>AWS Certified Cloud Practitioner</h2>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1EroAAapJf-Wct2LAnfZv_HeTr-jKqZ_K/view?usp=sharing" target="_blank">Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Azure Administrator Associate</h2>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1wSkrVGjqsEJ9VbAa8rIVzMOjVhYFHCph/view?usp=sharing" target="_blank">Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>MERN Full Stack Certification Course</h2>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1UuooNh4ZvxEbLHzT0yErsHrUb0h_haXs/view?usp=sharing" target="_blank">Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------PortFolio ------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work12.jpg">
+                    <div class="layer">
+                       <h3>Automated Vehicle Access Control System</h3>
+                       <p>We created an IOT Project Using the Arduino Uno,The Automated Vehicle Access Control System is designed to enhance security and streamline the entry process.</p>
+                       <a href="https://www.axis.com/solutions/vehicle-access-control" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Work222.jpg">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>Created a simple Website using HTML , CSS and JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                     </div>
+                </div>
+              <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>This was a group project which was done in a team. We made a functional Website using the Mern Techology.</p>
+                        <a href="https://mern-project-music-app.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                     </div>
+                </div>  
+            </div>
+          <!--<a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!------------------Contact --------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>karelgoransh2003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8107628469</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/goransh-karel-841a37248/" target="_blank"<i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Resume_2.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Goransh Karel <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab"); 
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-250px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLmblrFMA1SRx0fj1erVgmkooj4EPGKsWzQNgusNL39uYOc8ZDPWNDdTRW9gZrnbkp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully :)"
+            setTimeout(function(){
+                msg.innerHTML ="";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
